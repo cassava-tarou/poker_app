@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="judge_form">
+        <%= form_tag('/hands/judge',method: :post) do %>
+         <input type="text" name="text" placeholder="H1 D2 S3 C4 H5">
+         <input type="submit" valie="入力">
+        <% end %> 
+    </div>
+    
+    <div class="result">
+        <p><%= @judgement %></p>
+    </div>
+    
+</div>
